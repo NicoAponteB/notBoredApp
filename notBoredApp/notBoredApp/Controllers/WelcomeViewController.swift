@@ -8,10 +8,13 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
     @IBOutlet weak var participantsTextField: UITextField!
     @IBOutlet weak var participantsLabelError: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var termsAndConditions: UIButton!
+    
+//    var coordinator: WelcomeViewCoordinator!
     
     let yourAttributes: [NSAttributedString.Key: Any] = [
           .font: UIFont.systemFont(ofSize: 14),
@@ -71,7 +74,12 @@ class WelcomeViewController: UIViewController {
         if participantsTextField.text == "" {
             participantsTextField.text = "0"
         }
+        
+        let vc = ActivitiesViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
         print("Amount of participants \(String(describing: participantsTextField.text))")
+        
     }
     @IBAction func tapTermsAndConditions(_ sender: Any) {
         print("Terms and conditions clicked")

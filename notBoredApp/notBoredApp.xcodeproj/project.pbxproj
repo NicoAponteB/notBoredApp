@@ -14,6 +14,13 @@
 		95288385284FA65300DD1B13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95288384284FA65300DD1B13 /* ViewController.swift */; };
 		9528838A284FA65400DD1B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95288389284FA65400DD1B13 /* Assets.xcassets */; };
 		9528838D284FA65400DD1B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9528838B284FA65400DD1B13 /* LaunchScreen.storyboard */; };
+		9586DD2E2850DFA2000BCF3D /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DD2D2850DFA2000BCF3D /* CoordinatorProtocol.swift */; };
+		9586DD302850E2B8000BCF3D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DD2F2850E2B8000BCF3D /* MainCoordinator.swift */; };
+		9586DD332850E488000BCF3D /* VCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DD322850E488000BCF3D /* VCExtension.swift */; };
+		9586DD362850E59D000BCF3D /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DD352850E59D000BCF3D /* HomeViewCoordinator.swift */; };
+		9586DD3A2850E971000BCF3D /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DD382850E971000BCF3D /* ActivitiesViewController.swift */; };
+		9586DD3B2850E971000BCF3D /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9586DD392850E971000BCF3D /* ActivitiesViewController.xib */; };
+		9586DD3D2850E9E0000BCF3D /* ActivitesViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DD3C2850E9E0000BCF3D /* ActivitesViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		95288389284FA65400DD1B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9528838C284FA65400DD1B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9528838E284FA65400DD1B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9586DD2D2850DFA2000BCF3D /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		9586DD2F2850E2B8000BCF3D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		9586DD322850E488000BCF3D /* VCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExtension.swift; sourceTree = "<group>"; };
+		9586DD352850E59D000BCF3D /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
+		9586DD382850E971000BCF3D /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		9586DD392850E971000BCF3D /* ActivitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesViewController.xib; sourceTree = "<group>"; };
+		9586DD3C2850E9E0000BCF3D /* ActivitesViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitesViewCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,39 +53,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		62783C0F284FC4B80015F92C /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				62783C12284FC4E60015F92C /* View */,
-				62783C11284FC4D60015F92C /* ViewModel */,
-				62783C10284FC4C90015F92C /* Service */,
-			);
-			path = Welcome;
-			sourceTree = "<group>";
-		};
-		62783C10284FC4C90015F92C /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		62783C11284FC4D60015F92C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		62783C12284FC4E60015F92C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				62783C13284FC5100015F92C /* WelcomeViewController.swift */,
-				62783C14284FC5100015F92C /* WelcomeViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		95288374284FA65300DD1B13 = {
 			isa = PBXGroup;
 			children = (
@@ -91,15 +72,55 @@
 		9528837F284FA65300DD1B13 /* notBoredApp */ = {
 			isa = PBXGroup;
 			children = (
-				62783C0F284FC4B80015F92C /* Welcome */,
+				9586DD342850E584000BCF3D /* Coordinators */,
+				9543546628511D87006FE21A /* Controllers */,
+				9543546728511D98006FE21A /* Views */,
+				9586DD312850E472000BCF3D /* Util */,
 				95288380284FA65300DD1B13 /* AppDelegate.swift */,
 				95288382284FA65300DD1B13 /* SceneDelegate.swift */,
 				95288384284FA65300DD1B13 /* ViewController.swift */,
 				95288389284FA65400DD1B13 /* Assets.xcassets */,
 				9528838B284FA65400DD1B13 /* LaunchScreen.storyboard */,
 				9528838E284FA65400DD1B13 /* Info.plist */,
+				9586DD2D2850DFA2000BCF3D /* CoordinatorProtocol.swift */,
+				9586DD2F2850E2B8000BCF3D /* MainCoordinator.swift */,
 			);
 			path = notBoredApp;
+			sourceTree = "<group>";
+		};
+		9543546628511D87006FE21A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62783C13284FC5100015F92C /* WelcomeViewController.swift */,
+				9586DD382850E971000BCF3D /* ActivitiesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9543546728511D98006FE21A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62783C14284FC5100015F92C /* WelcomeViewController.xib */,
+				9586DD392850E971000BCF3D /* ActivitiesViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9586DD312850E472000BCF3D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9586DD322850E488000BCF3D /* VCExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		9586DD342850E584000BCF3D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9586DD352850E59D000BCF3D /* HomeViewCoordinator.swift */,
+				9586DD3C2850E9E0000BCF3D /* ActivitesViewCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9528838D284FA65400DD1B13 /* LaunchScreen.storyboard in Resources */,
+				9586DD3B2850E971000BCF3D /* ActivitiesViewController.xib in Resources */,
 				62783C16284FC5100015F92C /* WelcomeViewController.xib in Resources */,
 				9528838A284FA65400DD1B13 /* Assets.xcassets in Resources */,
 			);
@@ -174,7 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				95288385284FA65300DD1B13 /* ViewController.swift in Sources */,
+				9586DD302850E2B8000BCF3D /* MainCoordinator.swift in Sources */,
+				9586DD3D2850E9E0000BCF3D /* ActivitesViewCoordinator.swift in Sources */,
+				9586DD362850E59D000BCF3D /* HomeViewCoordinator.swift in Sources */,
 				62783C15284FC5100015F92C /* WelcomeViewController.swift in Sources */,
+				9586DD3A2850E971000BCF3D /* ActivitiesViewController.swift in Sources */,
+				9586DD2E2850DFA2000BCF3D /* CoordinatorProtocol.swift in Sources */,
+				9586DD332850E488000BCF3D /* VCExtension.swift in Sources */,
 				95288381284FA65300DD1B13 /* AppDelegate.swift in Sources */,
 				95288383284FA65300DD1B13 /* SceneDelegate.swift in Sources */,
 			);
