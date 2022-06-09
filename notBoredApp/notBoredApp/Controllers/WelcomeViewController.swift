@@ -82,7 +82,8 @@ class WelcomeViewController: UIViewController {
         
     }
     @IBAction func tapTermsAndConditions(_ sender: Any) {
-        print("Terms and conditions clicked")
+        let vc = TermsViewController()
+        self.present(vc, animated: true)
         
     }
 }

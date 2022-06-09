@@ -21,6 +21,8 @@
 		9586DD3A2850E971000BCF3D /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DD382850E971000BCF3D /* ActivitiesViewController.swift */; };
 		9586DD3B2850E971000BCF3D /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9586DD392850E971000BCF3D /* ActivitiesViewController.xib */; };
 		9586DD3D2850E9E0000BCF3D /* ActivitesViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586DD3C2850E9E0000BCF3D /* ActivitesViewCoordinator.swift */; };
+		B402862728512D2E003BFAAD /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B402862528512D2E003BFAAD /* TermsViewController.swift */; };
+		B402862828512D2E003BFAAD /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B402862628512D2E003BFAAD /* TermsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		9586DD382850E971000BCF3D /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		9586DD392850E971000BCF3D /* ActivitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesViewController.xib; sourceTree = "<group>"; };
 		9586DD3C2850E9E0000BCF3D /* ActivitesViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitesViewCoordinator.swift; sourceTree = "<group>"; };
+		B402862528512D2E003BFAAD /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		B402862628512D2E003BFAAD /* TermsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		9543546628511D87006FE21A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B402862528512D2E003BFAAD /* TermsViewController.swift */,
 				62783C13284FC5100015F92C /* WelcomeViewController.swift */,
 				9586DD382850E971000BCF3D /* ActivitiesViewController.swift */,
 			);
@@ -100,6 +105,7 @@
 		9543546728511D98006FE21A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B402862628512D2E003BFAAD /* TermsViewController.xib */,
 				62783C14284FC5100015F92C /* WelcomeViewController.xib */,
 				9586DD392850E971000BCF3D /* ActivitiesViewController.xib */,
 			);
@@ -184,6 +190,7 @@
 				9528838D284FA65400DD1B13 /* LaunchScreen.storyboard in Resources */,
 				9586DD3B2850E971000BCF3D /* ActivitiesViewController.xib in Resources */,
 				62783C16284FC5100015F92C /* WelcomeViewController.xib in Resources */,
+				B402862828512D2E003BFAAD /* TermsViewController.xib in Resources */,
 				9528838A284FA65400DD1B13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +211,7 @@
 				9586DD2E2850DFA2000BCF3D /* CoordinatorProtocol.swift in Sources */,
 				9586DD332850E488000BCF3D /* VCExtension.swift in Sources */,
 				95288381284FA65300DD1B13 /* AppDelegate.swift in Sources */,
+				B402862728512D2E003BFAAD /* TermsViewController.swift in Sources */,
 				95288383284FA65300DD1B13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
