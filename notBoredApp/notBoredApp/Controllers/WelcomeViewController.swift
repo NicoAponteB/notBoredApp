@@ -67,22 +67,27 @@ class WelcomeViewController: UIViewController {
         if value.count >= 3 {
             return "Your number can't be greater than three digits"
         }
+        
+        if value == "0" || value == "00" {
+            return "Your participants number must be greater than 0"
+        }
+            
         return nil
     }
     
     @IBAction func startButtton(_ sender: Any) {
-        if participantsTextField.text == "" {
-            participantsTextField.text = "0"
-        }
+//        if participantsTextField.text == "" {
+//            participantsTextField.text = "0"
+//        }
         
         let vc = ActivitiesViewController()
+        
+        vc.participant = participantsTextField.text ?? "error"
         self.navigationController?.pushViewController(vc, animated: true)
         
-        print("Amount of participants \(String(describing: participantsTextField.text))")
-        
     }
+    
     @IBAction func tapTermsAndConditions(_ sender: Any) {
-        print("Terms and conditions clicked")
-        
+        self.present(TermsViewController(), animated: true)
     }
 }
