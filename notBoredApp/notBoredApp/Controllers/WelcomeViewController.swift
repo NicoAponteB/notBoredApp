@@ -76,9 +76,6 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func startButtton(_ sender: Any) {
-//        if participantsTextField.text == "" {
-//            participantsTextField.text = "0"
-//        }
         
         let vc = ActivitiesViewController()
         

@@ -32,9 +32,10 @@ class ActivitiesViewController: UIViewController {
     
     @IBAction func randomButtonTap(_ sender: Any) {
         
-        let vcDetail = DetailCategoryViewController()
+        let vcDetail = RandomDetailCategoryViewController()
         let randomUrl = Constants().url_base + "activity?participants=" + "\(self.participant)"
-        
+        vcDetail.participants = self.participant
+        print(self.participant)
         NetworkingProvider.shared.getCategory(url: randomUrl) { category in
             
             vcDetail.titleLabel.text = "Random"
@@ -54,11 +55,6 @@ class ActivitiesViewController: UIViewController {
         
         self.navigationController?.pushViewController(vcDetail, animated: true)
     }
-    
-    func getCategory() {
-//        DetailCategoryService().getDetailCategory
-        }
-
 }
 
 extension ActivitiesViewController: UITableViewDataSource {
@@ -97,12 +93,15 @@ extension ActivitiesViewController: UITableViewDelegate {
             vcDetail.priceLabel.text = price
             
             vcDetail.categoryLabel.isHidden = true
+            vcDetail.urlCustom = urlCategorySelected
+            
 
         } failure: { error in
-            print("Error")
+            print("Error llamando API")
         }
-
         self.navigationController?.pushViewController(vcDetail, animated: true)
+
+        
     }
 }
 

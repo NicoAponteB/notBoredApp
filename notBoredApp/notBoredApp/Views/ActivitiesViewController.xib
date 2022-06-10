@@ -45,7 +45,7 @@
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="tintColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="4ME-ku-xMo" secondAttribute="bottom" id="3EX-Q8-si1"/>
                 <constraint firstItem="lBE-nX-2Cy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3a3-oa-Glv"/>
@@ -63,9 +63,6 @@
         <image name="shuffle" catalog="system" width="128" height="95"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

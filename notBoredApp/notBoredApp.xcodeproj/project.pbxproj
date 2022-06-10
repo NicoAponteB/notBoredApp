@@ -11,10 +11,11 @@
 		62783C16284FC5100015F92C /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62783C14284FC5100015F92C /* WelcomeViewController.xib */; };
 		62AB4E2B28513A3B002E5C62 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB4E2A28513A3A002E5C62 /* ApiManager.swift */; };
 		62AB4E2D28513A79002E5C62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB4E2C28513A79002E5C62 /* Constants.swift */; };
-		62AB4E3028513CDB002E5C62 /* DetailCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB4E2F28513CDB002E5C62 /* DetailCategoryService.swift */; };
 		62AB4E3328513D04002E5C62 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB4E3228513D04002E5C62 /* Category.swift */; };
 		62AB4E382851400F002E5C62 /* DetailCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB4E362851400F002E5C62 /* DetailCategoryViewController.swift */; };
 		62AB4E392851400F002E5C62 /* DetailCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AB4E372851400F002E5C62 /* DetailCategoryViewController.xib */; };
+		62C3ED102853A836008FD25E /* RandomDetailCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3ED0F2853A836008FD25E /* RandomDetailCategoryViewController.swift */; };
+		62C3ED122853A891008FD25E /* RandomDetailCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C3ED112853A891008FD25E /* RandomDetailCategoryViewController.xib */; };
 		62D0A19F28518016001E7F2E /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0A19E28518016001E7F2E /* NetworkingProvider.swift */; };
 		62F29503285253A10097DB28 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F29502285253A10097DB28 /* TermsViewController.swift */; };
 		62F29505285253AC0097DB28 /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F29504285253AC0097DB28 /* TermsViewController.xib */; };
@@ -39,10 +40,11 @@
 		62783C14284FC5100015F92C /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		62AB4E2A28513A3A002E5C62 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		62AB4E2C28513A79002E5C62 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		62AB4E2F28513CDB002E5C62 /* DetailCategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCategoryService.swift; sourceTree = "<group>"; };
 		62AB4E3228513D04002E5C62 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		62AB4E362851400F002E5C62 /* DetailCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCategoryViewController.swift; sourceTree = "<group>"; };
 		62AB4E372851400F002E5C62 /* DetailCategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCategoryViewController.xib; sourceTree = "<group>"; };
+		62C3ED0F2853A836008FD25E /* RandomDetailCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomDetailCategoryViewController.swift; sourceTree = "<group>"; };
+		62C3ED112853A891008FD25E /* RandomDetailCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RandomDetailCategoryViewController.xib; sourceTree = "<group>"; };
 		62D0A19E28518016001E7F2E /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
 		62F29502285253A10097DB28 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		62F29504285253AC0097DB28 /* TermsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
@@ -98,7 +100,6 @@
 		62AB4E2E28513C71002E5C62 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				62AB4E2F28513CDB002E5C62 /* DetailCategoryService.swift */,
 				62D0A19E28518016001E7F2E /* NetworkingProvider.swift */,
 			);
 			path = Service;
@@ -119,6 +120,14 @@
 				9C5C9999A3B3F35C3BC6A63F /* Pods-notBoredApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9511B80E2853B75100DEB6D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9586DD322850E488000BCF3D /* VCExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		95288374284FA65300DD1B13 = {
@@ -149,6 +158,7 @@
 				9543546628511D87006FE21A /* Controllers */,
 				9543546728511D98006FE21A /* Views */,
 				9586DD312850E472000BCF3D /* Util */,
+				9511B80E2853B75100DEB6D1 /* Extensions */,
 				95288380284FA65300DD1B13 /* AppDelegate.swift */,
 				95288382284FA65300DD1B13 /* SceneDelegate.swift */,
 				95288384284FA65300DD1B13 /* ViewController.swift */,
@@ -164,6 +174,7 @@
 		9543546628511D87006FE21A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				62C3ED0F2853A836008FD25E /* RandomDetailCategoryViewController.swift */,
 				62F29502285253A10097DB28 /* TermsViewController.swift */,
 				62783C13284FC5100015F92C /* WelcomeViewController.swift */,
 				9586DD382850E971000BCF3D /* ActivitiesViewController.swift */,
@@ -175,6 +186,7 @@
 		9543546728511D98006FE21A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				62C3ED112853A891008FD25E /* RandomDetailCategoryViewController.xib */,
 				62F29504285253AC0097DB28 /* TermsViewController.xib */,
 				62AB4E372851400F002E5C62 /* DetailCategoryViewController.xib */,
 				62783C14284FC5100015F92C /* WelcomeViewController.xib */,
@@ -186,7 +198,6 @@
 		9586DD312850E472000BCF3D /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				9586DD322850E488000BCF3D /* VCExtension.swift */,
 				952F63B5285270A500C4CFA9 /* switchPriceFunction.swift */,
 			);
 			path = Util;
@@ -263,6 +274,7 @@
 			files = (
 				62AB4E392851400F002E5C62 /* DetailCategoryViewController.xib in Resources */,
 				9528838D284FA65400DD1B13 /* LaunchScreen.storyboard in Resources */,
+				62C3ED122853A891008FD25E /* RandomDetailCategoryViewController.xib in Resources */,
 				9586DD3B2850E971000BCF3D /* ActivitiesViewController.xib in Resources */,
 				62783C16284FC5100015F92C /* WelcomeViewController.xib in Resources */,
 				62F29505285253AC0097DB28 /* TermsViewController.xib in Resources */,
@@ -331,10 +343,10 @@
 				62AB4E2B28513A3B002E5C62 /* ApiManager.swift in Sources */,
 				9586DD2E2850DFA2000BCF3D /* CoordinatorProtocol.swift in Sources */,
 				9586DD332850E488000BCF3D /* VCExtension.swift in Sources */,
+				62C3ED102853A836008FD25E /* RandomDetailCategoryViewController.swift in Sources */,
 				95288381284FA65300DD1B13 /* AppDelegate.swift in Sources */,
 				95288383284FA65300DD1B13 /* SceneDelegate.swift in Sources */,
 				62F29503285253A10097DB28 /* TermsViewController.swift in Sources */,
-				62AB4E3028513CDB002E5C62 /* DetailCategoryService.swift in Sources */,
 				62AB4E2D28513A79002E5C62 /* Constants.swift in Sources */,
 				62AB4E3328513D04002E5C62 /* Category.swift in Sources */,
 			);

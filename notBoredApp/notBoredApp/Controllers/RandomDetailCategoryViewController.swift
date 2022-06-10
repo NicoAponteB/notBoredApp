@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailCategoryViewController: UIViewController {
+class RandomDetailCategoryViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var activityLabel: UILabel!
@@ -21,9 +21,7 @@ class DetailCategoryViewController: UIViewController {
     
     var urlCategory: String?
     
-    var participants: Int?
-    
-    
+    var participants: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,26 +31,33 @@ class DetailCategoryViewController: UIViewController {
         self.categoryLabel.text = ""
         self.participantsLabel.text = ""
         self.priceLabel.text = ""
+        
+        if priceLabel.text == "" {
+            self.Button.isHidden = false
+        }
+        
     }
+
     
     @IBAction func pickAnother(_ sender: Any) {
         
-        NetworkingProvider.shared.getCategory(url: urlCustom) { category in
+        let randomUrl = Constants().url_base + "activity?participants=" + "\(String(describing: participants))"
+        print(randomUrl)
+        NetworkingProvider.shared.getCategory(url: randomUrl) { category in
             
             self.titleLabel.text = "\(category.type)"
             self.activityLabel.text = "\(category.activity)"
             self.participantsLabel.text = "Participants: \(category.participants)"
+            
             let price = getPrice(price: category.price)
             self.priceLabel.text = price
-            
-            
             
             self.categoryLabel.isHidden = true
         
         
     } failure: { error in
         self.Button.isHidden = true
-        print("Error")
+        print("error")
     }
     }
 }
